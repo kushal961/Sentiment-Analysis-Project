@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Glassmorphism Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title & Subtitle */
+.title {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-weight: 300;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Textarea */
+textarea {
+    height: 120px;
+    resize: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid #ff758c;
+    box-shadow: 0px 0px 10px rgba(255, 117, 140, 0.5);
+}
+
+/* Button */
+.btn {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #ff5e78, #ff6d98);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(255, 94, 120, 0.3);
+}
+
+/* Sentiment Result */
+.result {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    margin-top: 15px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.sentiment-badge {
+    background: white;
+    color: #ff5e78;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
